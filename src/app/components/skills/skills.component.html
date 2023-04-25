@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="title">
+    <h2>Habilidades</h2>
+    <div class="options">
+      <i  (click)="crearSkill()" class="bi bi-plus-circle" *ngIf="isLogged"></i>
+    </div>
+  </div>
+  <div class="data">
+    <div class="skill"  *ngFor="let skill of skill">
+      <circle-progress
+      [percent]="skill.porcentaje"
+      [radius]="90"
+      [imageSrc]="''"
+      [title]="skill.nombreS"
+      [titleColor]="'#fff'"
+      [showTitle]="true"
+      [showImage]="false"
+      [imageHeight]="70"
+      [imageWidth]="70"
+      [showUnits]="false"
+      [showSubtitle]="false"
+      [outerStrokeWidth]="16"
+      [innerStrokeWidth]="2"
+      [outerStrokeColor]="'#fff'"
+      [innerStrokeColor]="'#d3d3d3'"
+      [animation]="true"
+      [animationDuration]="600"
+    >
+    </circle-progress>
+      <div class="actions" *ngIf="isLogged">
+        <i class="bi bi-pencil" routerLink="updateskill/{{skill.id}}"></i>
+        <i class="bi bi-trash3" (click)="delete(skill.id)"></i>
+      </div>
+    </div> 
+  </div>
+</div>
+
+

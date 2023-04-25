@@ -1,0 +1,25 @@
+<div class="container" id="experiencia">
+    <div class="title">
+      <h2>Experiencia</h2>
+      <div class="options">
+        <i (click)="crearExperiencia()" class="bi bi-plus-circle" *ngIf="isLogged"></i>
+      </div>
+    </div>
+    <div class="data">
+      <div class="item" *ngFor="let Experiencia of experiencia">
+        <div class="title-section">
+          <h3>{{ Experiencia.nombreE }}</h3>
+        </div>
+        <div class="description">
+          <p>
+            {{ Experiencia.descripcionE }}
+          </p>
+        </div>
+        <div class="actions" *ngIf="isLogged">
+          <i class="bi bi-pencil" routerLink="updateexpe/{{Experiencia.id}}"></i>
+          <i class="bi bi-trash3" (click)="delete(Experiencia.id)"></i>
+        </div>
+      </div>
+    </div>
+    
+  </div>

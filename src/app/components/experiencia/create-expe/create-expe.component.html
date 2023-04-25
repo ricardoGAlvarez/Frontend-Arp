@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="title">
+      <h2>Agregar Experiencia</h2>
+    </div>
+    <form (ngSubmit)="onCreate()">
+      <div class="form">
+        <label class="form-label">Nombre de la Empresa</label>
+        <input type="text" class="form-control" id="nombreE" name="nombreE" [(ngModel)]="nombreE"/>
+        <label class="form-label">Descripcion del cargo</label>
+        <input type="text" class="form-control" id="descripcionE" name="descripcionE" [(ngModel)]="descripcionE"/>
+      </div>
+      <div class="buton">
+        <button class="btn">Agregar Experiencia</button>
+      </div>
+    </form>
+  </div>
+  

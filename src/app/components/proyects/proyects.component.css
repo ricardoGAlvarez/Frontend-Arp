@@ -1,0 +1,140 @@
+.container {
+  margin-top: 4rem;
+  background: rgba(255, 255, 255, 0.192);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 1rem 0 1rem 0;
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  color: #2b2a3b;
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.title i {
+  font-size: 2rem;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+.data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+}
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 3rem 0 3rem 0;
+}
+.description {
+  text-align: center;
+  margin-left: 1rem;
+}
+.description h3 {
+  font-size: 2rem;
+}
+.proyect{
+  display: flex;
+  flex-direction:column;
+}
+.proyect .btns{
+  display: flex;
+  justify-content: flex-end;
+margin-right:2rem;
+}
+.btns button{
+  margin:10px 5px 0 5px;
+  background: #fff;
+  width: 80px;
+}
+.btns button:hover{
+  background: #000;
+  color:#fff;
+}
+.proyect img {
+  width: 400px;
+}
+.rightside{
+  width: 60% ;
+  display: flex;
+  justify-content: space-between;
+}
+
+.actions {
+  display: flex;
+  align-items:center;
+  margin-right: 3rem;
+}
+.actions i {
+  cursor: pointer;
+  margin: 0 10px 0 10px;
+  font-size: 1.5rem;
+}
+@media(max-width:980px){
+  .rightside{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+  }
+  .actions {
+display: flex;
+justify-content: flex-end;
+margin-top:1rem;
+  }
+  
+}
+@media(max-width:459px){
+  .rightside  {
+    align-items:center;
+  }
+  
+}
+@media (max-width: 767px) {
+  .container {
+    width: 90%;
+  }
+  .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .description {
+    text-align: center;
+  }
+  .proyect img {
+    text-align: center;
+    width: 300px;
+  }
+  .actions {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding:0;
+    margin: 2rem 0 0 0 ;
+  }
+  .actions i {
+    cursor: pointer;
+    margin: 0 10px 0 10px;
+  }
+  .rightside{
+    display: flex;
+    justify-content: center;
+  }
+  .proyect .btns{
+    padding:0;
+    margin:0;
+    justify-content: center;
+ 
+  }
+}

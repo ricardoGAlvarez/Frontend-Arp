@@ -1,0 +1,42 @@
+.navbar {
+  background-color: transparent !important;
+  
+}
+.navbar img {
+  margin-left: 2rem;
+  width: 8.5rem;
+}
+.navbar a{
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 400;
+
+}
+
+.navbar .btn{
+    border:none;
+    margin: 0.2rem 1.5rem;
+}
+.navbar i{
+    color: #fff;
+    font-size: 30px;
+}
+ul{
+  align-items: center;
+  cursor: pointer;
+}
+.navbar a:hover{
+  color: #061acc;
+}
+.btn{
+  background-color: #061acc;
+}
+.btn:hover{
+  background-color: #fff;
+  color: #061acc;
+}
+@media (max-width:992px){
+  .btn{
+    width: 77%;
+  }
+}

@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="title">
+      <h2>Agregar Proyecto</h2>
+    </div>
+    <form (ngSubmit)="onCreate()">
+      <div class="form">
+        <label class="form-label">Nombre del Proyecto</label>
+        <input type="text" id="nombre" name="nombre" class="form-control" [(ngModel)]="nombre"/>
+        <label class="form-label">Descripcion del Proyecto</label>
+        <input type="text" id="descripcion" name="descripcion" class="form-control" [(ngModel)]="descripcion"/>
+        <label class="form-label">Imagen del Proyecto</label>
+        <input type="file" id="img" name="img" class="form-control"(change)="uploadImage($event)"/>
+      </div>
+      <div class="buton">
+        <button class="btn">Agregar Proyecto</button>
+      </div>
+    </form>
+  </div>
+  

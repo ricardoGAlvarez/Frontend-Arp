@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="title">
+    <h2>Proyectos</h2>
+    <div class="options">
+      <i class="bi bi-plus-circle" (click)="crearProyecto()" *ngIf="isLogged"></i>
+    </div>
+  </div>
+  <div class="data">
+    <div class="item"  *ngFor="let Proyecto of proyecto">
+      <div class="description">
+        <h3>{{Proyecto.nombre}}</h3>
+        <p>
+          {{Proyecto.descripcion}}
+        </p>
+      </div>
+     <div class="rightside">
+      <div class="proyect">
+        <img  src="{{Proyecto.img}}"  alt="img" />
+        <!-- <div class="btns">
+          <button class="btn "><i class="bi bi-github"></i></button>
+        <button class="btn "><i class="bi bi-eye"></i></button>
+        </div> -->
+      </div>
+      <div class="actions"  *ngIf="isLogged">
+        <i class="bi bi-pencil" routerLink="updateproyecto/{{Proyecto.id}}"></i>
+        <i class="bi bi-trash3" (click)="delete(Proyecto.id)"></i>
+      </div>
+     </div>
+    </div>
+    
+  </div>
+</div>
+

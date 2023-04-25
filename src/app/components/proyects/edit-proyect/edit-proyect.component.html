@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="title">
+      <h2>Editar Proyecto</h2>
+    </div>
+    <form (ngSubmit)="onUpdate()">
+      <div class="form">
+        <label class="form-label">Nombre del proyecto</label>
+        <input type="text" class="form-control" name="nombre" placeholder="{{proyecto.nombre}}"  [(ngModel)]="proyecto.nombre"/>
+        <label class="form-label">Descripcion del proyecto</label>
+        <input type="text" class="form-control" name="descripcion"  placeholder="{{proyecto.descripcion}}" [(ngModel)]="proyecto.descripcion"/>
+        <label class="form-label">Imagen de referencia</label>
+        <input type="file" class="form-control" name="img"  (change)="uploadImage($event)"/>
+        
+      </div>
+      <div class="buton">
+        <button class="btn">Confirmar</button>
+      </div>
+    </form>
+  </div>  
+  

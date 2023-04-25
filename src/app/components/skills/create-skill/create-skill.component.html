@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="title">
+      <h2>Agregar Skill</h2>
+    </div>
+    <form (ngSubmit)="onCreate()">
+      <div class="form">
+        <label class="form-label">Nombre de la Habilidad</label>
+        <input type="text" class="form-control" id="nombreS" name="nombreS" [(ngModel)]="nombreS"/>
+        <label class="form-label">Porcentaje de la Habilidad </label>
+        <input type="number" class="form-control" id="porcentaje" name="porcentaje" [(ngModel)]="porcentaje"/>
+      </div>
+      <div class="buton">
+        <button class="btn">Agregar Skill</button>
+      </div>
+    </form>
+  </div>
+  

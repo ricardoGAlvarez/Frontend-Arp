@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="title">
+      <h2>Editar Persona</h2>
+    </div>
+    <form (ngSubmit)="onUpdate()">
+      <div class="form">
+        <label class="form-label">Nombre</label>
+        <input type="text" class="form-control" placeholder="{{persona.nombre}}"  name="nombre" [(ngModel)]="persona.nombre" />
+        <label class="form-label">Apellido</label>
+        <input type="text" class="form-control" placeholder="{{persona.apellido}}"  name="apellido"  [(ngModel)]="persona.apellido" />
+        <label class="form-label">Titulo</label>
+        <input type="text" class="form-control" placeholder="{{persona.titulo}}" name="titulo"   [(ngModel)]="persona.titulo"  />
+        <label class="form-label">Descripcion del titulo</label>
+        <input type="text" class="form-control" placeholder="{{persona.descripcion}}"  name="descripcion"  [(ngModel)]="persona.descripcion" />
+        <label class="form-label">Foto de Perfil</label>
+        <input type="file" class="form-control" />
+      </div>
+      <div class="buton">
+        <button class="btn">Editar Persona</button>
+      </div>
+    </form>
+  </div>
+  

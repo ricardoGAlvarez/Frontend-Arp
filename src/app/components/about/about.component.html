@@ -1,0 +1,18 @@
+<div class="container" >
+  <div class="profile">
+    <img src="{{persona?.img}}" alt="profile" />
+    <div class="social">
+        <a href="https://github.com/ricardoGAlvarez"  target="_blank"><img src="../../../assets/git.png" alt=""></a>
+        <a href="https://www.linkedin.com/in/ricardoGAlvarez"  target="_blank"><img src="../../../assets/linkedin.png" alt=""></a>
+    </div>
+  </div>
+  <div class="about">
+    <h1>{{persona?.nombre}} {{persona?.apellido}}</h1>
+    <h2>{{persona?.titulo}}</h2>
+    <p>
+      {{persona?.descripcion}}
+    </p>
+    <button class="btn" routerLink="updateprofile/{{persona?.id}}" *ngIf="isLogged">Editar</button>
+  </div>
+</div>
+

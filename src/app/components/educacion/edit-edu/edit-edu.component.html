@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="title">
+      <h2>Editar Educacion</h2>
+    </div>
+    <form (ngSubmit)="onUpdate()">
+      <div class="form">
+        <label class="form-label">Titulo obtenido</label>
+        <input type="text" class="form-control" name="nombreEd" [(ngModel)]="educacion.nombreEd" />
+        <label class="form-label">Nombre de la Institucion</label>
+        <input type="text" class="form-control" name="descripcionEd" [(ngModel)]="educacion.descripcionEd" />
+      </div>
+      <div class="buton">
+        <button class="btn">Confirmar</button>
+      </div>
+    </form>
+  </div>
+  
